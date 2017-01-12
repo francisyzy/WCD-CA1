@@ -1,0 +1,355 @@
+.OrderedList, ul, article, body, div, footer, header, h1, h2, p, audio {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+body{
+	max-width: 1280px;
+	text-align: left;
+	font-family: Avenir, Arial;
+}
+
+ul, article{
+	margin: 80px auto 40px;
+	max-width: 980px;
+	position: relative;
+	padding: 120px 120px 0 120px;
+}
+
+.OrderedList, ul{
+	font-size: 20px;
+	padding-left: 100px;
+}
+
+
+h2, article p{
+  display: inline;
+}
+
+h2{
+	color: darkorange;
+}
+
+ul p:first-letter, article p:first-letter{
+	font-weight: bolder;
+}
+
+footer{
+	right: 5%;
+	position: absolute;
+}
+
+aside{
+	text-align: center;
+	background-color: rgba(249, 213, 178, 0.25);
+	margin: 0 10% 5% 10%;
+}
+
+audio{
+	display: none;
+}
+
+iframe{
+	padding-left: 200px;
+	border: 0px;
+}
+
+.ArticleImage{
+	max-width: 50%;
+	align-content: center;
+}
+.OrderedList{
+	color:#EE7600;
+}
+
+.UbuntuFont{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*Link Magic*/
+.link a:link {
+    text-decoration: none;
+	color: #CC7000;
+}
+
+.link a:visited {
+    text-decoration: none;
+	color: #9C5500;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.link a:active {
+    text-decoration: underline;
+}
+
+.special:hover {
+    background-color: #BF6900;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 11px;
+}
+
+/*Nav Bar Magic*/
+header {
+  background-color: white;
+  width: 100%;
+  top: 0;
+  position:absolute;
+  z-index:2;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 100px;
+    width: 100%;
+	position:absolute;
+    z-index:2;
+}
+
+nav p {
+    float: left;
+}
+
+nav p a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav p a:hover:not(.active) {
+    background-color: #BF6900;
+}
+
+.active {
+    background-color: #E57E00;
+}
+
+nav p a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav p a:hover, .dropdown:hover .dropbtn {
+    background-color: #BF6900;
+}
+/*magic part 2*/
+.navhidden {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+	z-index:1;
+	top:0;
+}
+
+.navhidden p {
+    float: left;
+	
+}
+
+.navhidden p a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	
+}
+
+.navhidden p a:hover:not(.active) {
+    background-color: #BF6900;
+}
+
+.navhidden p a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navhidden p a:hover, .dropdown:hover .dropbtn {
+    background-color: #BF6900;
+}
+
+/*header Magics*/
+
+header p{
+    color: darkorange;
+    text-shadow: 0px 0px 2px #BF6900;
+	font-size: 100px;
+	text-align: center;
+	font-family: Eurostile, "acumin-pro",sans-serif;
+}
+
+header p img{
+	allign: top;
+}
+
+header p:first-letter{
+	font-weight: bold;
+}
+
+header p:hover{
+    -webkit-animation: ShadowGlow 1s infinite; /* Chrome, Safari, Opera */
+    animation: ShadowGlow 1s infinite;
+}
+
+/* Chrome, Safari, Opera  (vendor specific)*/
+@-webkit-keyframes ShadowGlow {
+	0% {
+        text-shadow: 0 0 20px #BF6900;
+    }
+    50% {
+        text-shadow: 0 0 30px #BF6900;
+    }
+	100% {
+        text-shadow: 0 0 20px #BF6900;
+    }
+}
+
+/* Standard syntax */
+@keyframes ShadowGlow {
+	0% {
+        text-shadow: 0 0 20px #BF6900;
+    }
+    50% {
+        text-shadow: 0 0 30px #BF6900;
+    }
+	100% {
+        text-shadow: 0 0 20px #BF6900;
+    }
+}
+
+/*social media magic*/
+.social { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 20%;
+	top:0;
+	border-radius: 30px;
+	right: 0;
+}
+
+.social a {
+    float: right;
+	display: block;
+    padding: 14px 16px;
+}
+.social img{
+	border-radius: 30px;
+	z-index:1;
+}
+
+.social img:hover{
+	opacity: 0;
+}
+
+.socialhidden { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 20%;
+	top:0;
+	border-radius: 30px;
+	right: 0;
+}
+
+.socialhidden a {
+    float: right;
+	display: block;
+    padding: 14px 16px;
+}
+.socialhidden img{
+	border-radius: 30px;
+	z-index:1;
+}
+/*HoverZoomMagic*/
+figure{
+	border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+
+.Mid {
+    max-width: 30%;
+    display: block;
+	position: absolute;
+	padding-left: 10%;
+}
+
+.Final {
+    max-width: 30%;
+    display: block;
+	padding-left: 55%;
+	position: absolute;
+}
+
+.imghover {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	
+    width: 100%;
+    height: 100%; 
+    
+    -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+    -moz-transform: translate(-50%,-50%); /* Firefox */
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -o-transform: translate(-50%,-50%); /* Opera */
+    transform: translate(-50%,-50%);
+}
+
+
+.imgHover img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+  	-moz-transition: all 1s ease; /* Firefox */
+  	-o-transition: all 1s ease; /* IE 9 */
+  	-ms-transition: all 1s ease; /* Opera */
+  	transition: all 1s ease;
+}
+
+.imgHover img:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+.artPortfolioFooter{
+	right: 5%;
+	bottom: 0;
+	position: fixed;
+}
+
+/*Contact me hover see magic*/
+.HoverSee{
+	color: transparent;
+	text-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+.HoverSee:Hover{
+	color: Black;
+}
